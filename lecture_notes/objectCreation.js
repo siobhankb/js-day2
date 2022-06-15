@@ -1,43 +1,43 @@
 // JavaScript Objects - {property: value, etc.}
 
-let person = {
-    name: 'Tim',
-    age: 22,
-    favColor: 'blue'
-}
+// let person = {
+//     name: 'Tim',
+//     age: 22,
+//     favColor: 'blue'
+// }
 
-// dot notation
-console.log(person.name);
-// bracket notation
-console.log(person['name'])
-
-
-let person2 = {
-    name: 'Samantha',
-    age: 23,
-    languages: ['JavaScript', 'Python'],
-    teams: {
-        mlb: 'Nationals',
-        nfl: 'Commanders'
-    }
-}
+// // dot notation
+// console.log(person.name);
+// // bracket notation
+// console.log(person['name'])
 
 
-let person3 = {
-    name: "Albert",
-    printName: function(){console.log(`Hello my name is ${this.name}`)}
-}
+// let person2 = {
+//     name: 'Samantha',
+//     age: 23,
+//     languages: ['JavaScript', 'Python'],
+//     teams: {
+//         mlb: 'Nationals',
+//         nfl: 'Commanders'
+//     }
+// }
 
 
-console.log(person3)
-console.log(person3.printName)
-
-person3.printName()
-
-console.log('======================')
+// let person3 = {
+//     name: "Albert",
+//     printName: function(){console.log(`Hello my name is ${this.name}`)}
+// }
 
 
-// JavaScript Objects and Prototypes
+// console.log(person3)
+// console.log(person3.printName)
+
+// person3.printName()
+
+// console.log('======================')
+
+
+// // JavaScript Objects and Prototypes
 
 // let animal = {}
 // animal.name = 'Buddy'
@@ -63,9 +63,9 @@ console.log('======================')
 // console.log(animal)
 
 
-////////////////////////////
+// //////////////////////////
 // Function Instantiation //
-////////////////////////////
+// // //////////////////////////
 
 
 // function Animal(name, energy){
