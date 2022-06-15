@@ -22,11 +22,6 @@ var toCelsius = (Fahrenheit) => {
     the old password and new password. If the old password is wrong do not reset the password.
     Create an instance of the new user and then change their password using the method.
 */
-// const animalMethods = {
-//     eat: function(amount){
-//         this.energy += amount;
-//         console.log(`${this.name} is eating`)
-//     },
 
 class User {
     constructor(username, password) {
@@ -71,12 +66,14 @@ console.log(`mememe's new password is ${mememe.password}`);
 // let giggle = max(16, 19)
 // console.log(giggle)
 
-// const arr1 = [-10, -3, 4, -2, 8, 9, -3];
-// console.log(arr1);
-// const squaresOfNegatives = function (arr) {
-//   let squaredArr = [];
-//   let squareNegatives = arr1.map((num) => (num < 0 ? sqaredArr.push(num) : 0));
-//   console.log(squaredArr);
-//   return sqaredArr;
-// };
-// console.log(squareNegatives);
+const arr1 = [-10, -3, 4, -2, 8, 9, -3];
+console.log(arr1);
+
+const squaresOfNegatives = (arr) => {
+  let negatives = arr.filter(num => num < 0);
+  let squareNegatives = negatives.map(num => num ** 2);
+  return squareNegatives;
+};
+
+let squareMyArrs = squaresOfNegatives(arr1);
+console.log(squareMyArrs);
