@@ -77,3 +77,8 @@ const squaresOfNegatives = (arr) => {
 
 let squareMyArrs = squaresOfNegatives(arr1);
 console.log(squareMyArrs);
+
+
+//Brian's answer - combines filter and map
+let squareMyNegatives = arr1.filter((num) => num < 0).map((num) => num ** 2);
+console.log(squareMyNegatives);
