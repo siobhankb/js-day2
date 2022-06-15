@@ -27,25 +27,25 @@ var toCelsius = (Fahrenheit) => {
 //         this.energy += amount;
 //         console.log(`${this.name} is eating`)
 //     },
-const userMethods = {
-  changePassword: function (oldPassword, newPassword) {
-    if (this.password == oldPassword) {
-      this.password == newPassword;
-      console.log(`${this.username}'s password changed to ${newPassword}`);
-    }
-  },
-};
 
-function User(username, password) {
-  let user = {};
-  user.username = username;
-  user.password = password;
-  user.changePassword = userMethods.changePassword;
-  return user;
+class User {
+    constructor(username, password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    changePassword(oldPassword, newPassword) {
+        if (this.password == oldPassword) {
+            this.password = newPassword;
+            console.log(`${this.username}'s password changed to ${newPassword}`)
+        } else {
+            console.warn('incorrect password')
+        };
+    };
 }
 
-let mememe = User("allaboutme", "memyselfi");
-console.log(`mememe is ${mememe.username}`);
+let mememe = new User("allaboutme", "memyselfi");
+console.log(`mememe username is ${mememe.username}`);
 console.log(`mememe old password is ${mememe.password}`);
 console.log(`=====================================`);
 
@@ -55,7 +55,7 @@ console.log(`mememe's new password is ${mememe.password}`);
 console.log(`=====================================`);
 
 //WHY WON'T IT CHANGE AGAIN?
-mememe.changePassword("centeroftheuniverse", "xxx");
+mememe.changePassword("centeroftheuniverse", "awesomesauce");
 console.log(`mememe's new password is ${mememe.password}`);
 
 /*
@@ -71,12 +71,12 @@ console.log(`mememe's new password is ${mememe.password}`);
 // let giggle = max(16, 19)
 // console.log(giggle)
 
-const arr1 = [-10, -3, 4, -2, 8, 9, -3];
-console.log(arr1);
-const squaresOfNegatives = function (arr) {
-  let squaredArr = [];
-  let squareNegatives = arr1.map((num) => (num < 0 ? sqaredArr.push(num) : 0));
-  console.log(squaredArr);
-  return sqaredArr;
-};
-console.log(squareNegatives);
+// const arr1 = [-10, -3, 4, -2, 8, 9, -3];
+// console.log(arr1);
+// const squaresOfNegatives = function (arr) {
+//   let squaredArr = [];
+//   let squareNegatives = arr1.map((num) => (num < 0 ? sqaredArr.push(num) : 0));
+//   console.log(squaredArr);
+//   return sqaredArr;
+// };
+// console.log(squareNegatives);
